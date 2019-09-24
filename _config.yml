@@ -1,4 +1,4 @@
 name: Hank Quinlan, Horrible Cop
 markdown: kramdown
-
-remote_theme: murraco/Jekyll Resume Theme
+theme: minima
+#remote_theme: murraco/Jekyll Resume Theme
