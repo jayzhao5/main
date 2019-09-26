@@ -15,30 +15,28 @@ Mini Profile Template
 https://templatemo.com/tm-530-mini-profile
 -->
     <style>
-body {font-family: Arial;}
-.tab {
-  overflow: hidden;
-  border: none;
+.topnav {
   background-color: transparent;
+  overflow: hidden;
 }
-/* Style the buttons that are used to open the tab content */
-.tab button {
-  background-color: inherit;
+/* Style the links inside the navigation bar */
+.topnav a {
   float: left;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 0px 25px;
-  transition: 0.3s;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
   font-size: 17px;
 }
-/* Change background color of buttons on hover */
-.tab button:hover {
+/* Change the color of links on hover */
+.topnav a:hover {
   background-color: #ddd;
+  color: black;
 }
-/* Create an active/current tablink class */
-.tab button.active {
-  background-color: #ccc;
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
 }
 </style>
   </head>
@@ -46,7 +44,12 @@ body {font-family: Arial;}
     <!-- Welcome Section -->
 
     <section id="tmWelcome" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-01.jpg">
-      
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news">News</a>
+  <a href="#contact">Contact</a>
+  <a href="#about">About</a>
+</div>
       <!-- simple introduction-->
       <div class="tm-bg-white-transparent tm-welcome-container">
         <div class="container-fluid">
@@ -54,12 +57,7 @@ body {font-family: Arial;}
             <!-- Welcome Text -->
             <!-- White transparent bg -->
             <div class="col-md-7 tm-welcome-left-col">
-                                    <!-- Tab links -->
-        <div class="tab">
-        <button class="tablinks"><a href='page1.html'>CV</a></button>
-        <button class="tablinks">Blog</button>
-        <button class="tablinks">Life</button>
-      </div>
+
               <div class="tm-welcome-left">
                 <h2 class="tm-welcome-title">Welcome to Lu Yan's home Page</h2>
                 <p class="pb-0">
