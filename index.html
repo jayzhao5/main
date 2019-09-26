@@ -15,54 +15,51 @@ Mini Profile Template
 https://templatemo.com/tm-530-mini-profile
 -->
     <style>
-.topnav {
-  background-color: transparent;
+body {font-family: Arial;}
+.tab {
   overflow: hidden;
+  border: none;
+  background-color: transparent;
 }
-
-/* Style the links inside the navigation bar */
-.topnav a {
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
   float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0px 25px;
+  transition: 0.3s;
   font-size: 17px;
 }
-
-/* Change the color of links on hover */
-.topnav a:hover {
+/* Change background color of buttons on hover */
+.tab button:hover {
   background-color: #ddd;
-  color: black;
 }
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #4CAF50;
-  color: white;
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
 }
 </style>
   </head>
   <body>
     <!-- Welcome Section -->
-    <!--
+
     <section id="tmWelcome" class="parallax-window" data-parallax="scroll" data-image-src="img/mini-profile-bg-01.jpg">
-    -->
-<div class="topnav">
-  <a class="active" href="#home">Home</a>
-  <a href="#news">News</a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
-</div>
+      
       <!-- simple introduction-->
-    <div>
-      <!--div class="tm-bg-white-transparent tm-welcome-container"-->
-        <!--div class="container-fluid"-->
+      <div class="tm-bg-white-transparent tm-welcome-container">
+        <div class="container-fluid">
           <div class="row h-100">
             <!-- Welcome Text -->
             <!-- White transparent bg -->
             <div class="col-md-7 tm-welcome-left-col">
-
+                                    <!-- Tab links -->
+        <div class="tab">
+        <button class="tablinks"><a href='page1.html'>CV</a></button>
+        <button class="tablinks">Blog</button>
+        <button class="tablinks">Life</button>
+      </div>
               <div class="tm-welcome-left">
                 <h2 class="tm-welcome-title">Welcome to Lu Yan's home Page</h2>
                 <p class="pb-0">
@@ -80,16 +77,16 @@ https://templatemo.com/tm-530-mini-profile
               </div>
             </div>                
           </div>
-        <!--/div-->
-      <img src="img/profile1.jpg" width=420 height=420>
+        </div>
+ 
       </div>
-    <!--</section>-->
+    </section>
     <!-- End Welcome section -->
 
     <!-- Portfolio section -->
-    <!--<section id="tmPortfolio">-->
-      <!--div class="container-fluid"-->
-        <div>
+    <section id="tmPortfolio">
+      <div class="container-fluid">
+        
       <!--Publications-->
         <div class="row">
           <p> <h1> Publications </h1> </p>
@@ -179,8 +176,8 @@ https://templatemo.com/tm-530-mini-profile
             </div>
           </div>
         </div>
-      <!--/div-->
-    <!--</section>-->
+      </div>
+    </section>
     <!-- End portfolio section -->
 
     <!-- Contact section -->
@@ -236,7 +233,6 @@ https://templatemo.com/tm-530-mini-profile
             navigator.appVersion.indexOf("Edge") > -1) ||
           (navigator.appName == "Netscape" &&
             navigator.appVersion.indexOf("Trident") > -1);
-
         if (using_ms_browser == true) {
           alert(
             "Please use Chrome or Firefox for the best browsing experience!"
@@ -245,16 +241,13 @@ https://templatemo.com/tm-530-mini-profile
       }
       function setBrandMarginTop() {
         var bottomContainerHeight = $(".tm-welcome-container").height();
-
         $(".tm-brand-container-outer").css({
           "margin-top": -bottomContainerHeight + "px"
         });
       }
-
       $(function() {
         setBrandMarginTop();
         detectMsBrowser();
-
         // Handle window resize event
         $(window).resize(function() {
           setBrandMarginTop();
