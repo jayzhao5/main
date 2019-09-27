@@ -161,7 +161,7 @@ a:hover {
 .tm-portfolio-name {
   width: 330px;
   height: 220px;
-  font-size: 2rem;
+  font-size: 1rem;
   padding: 70px 95px;
   display: flex;
   align-items: center;
@@ -269,7 +269,7 @@ p {
 }
 
 .tm-copyright-text {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .tm-link {
