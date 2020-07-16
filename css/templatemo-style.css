@@ -341,3 +341,27 @@ p {
     padding: 25px;
   }
 }
+
+<style type="text/css">
+.subLogo {
+    position: relative;
+    z-index: 1000000;
+    display: block;
+    float: left;
+    margin: 24px 0 0 10px;
+    background-position: -174px -36px;
+}
+
+
+
+.a1{
+  z-index: 1000;
+}
+
+
+
+.p{
+  width:400px;
+  height: 400px;
+}
+</style>
